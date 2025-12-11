@@ -1,0 +1,16 @@
+@startuml
+left to right direction
+
+actor Student
+
+rectangle "el-Campus" {
+  (授業アンケート) as Test
+  (年間カレンダー閲覧) as News
+  (課題提出) as Submit
+}
+
+Student --> Test
+Student --> News
+Student --> Submit
+
+@enduml
