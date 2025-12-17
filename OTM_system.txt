@@ -1,0 +1,17 @@
+@startuml
+left to right direction
+
+actor 学生
+actor 教員
+
+rectangle OTMシステム {
+  学生 -- (ログイン)
+  学生 -- (講義資料の閲覧)
+  学生 -- (課題の提出)
+
+  教員 -- (ログイン)
+  教員 -- (講義資料の登録)
+  教員 -- (課題の作成)
+  教員 -- (課題の採点)
+}
+@enduml
