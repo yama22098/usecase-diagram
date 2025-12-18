@@ -1,0 +1,10 @@
+sequenceDiagram
+    participant Main as Main Function
+    participant Calc as calculate()
+    participant Input as getInput()
+
+    Main->>Calc: calculate() を呼び出す
+    Calc->>Input: getInput() を呼び出す
+    Input-->>Calc: 入力データを返す
+    Calc-->>Main: 計算結果を返す
+    Main->>Main: 結果を出力
